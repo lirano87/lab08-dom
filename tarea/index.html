@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi lista de tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi lista de tareas pendientes</h1>
+
+  <section>
+    <h2>Registrar una tarea</h2>
+
+    <form id="formulario">
+      <input
+        id="nombreTarea"
+        type="text"
+        placeholder="Escribe una tarea"
+      >
+      <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Tareas registradas</h2>
+    <ul id="listaTareas"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
